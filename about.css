@@ -1,0 +1,275 @@
+/*About page*/
+#about-showcase{
+    background-image: url("sch1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100vw;
+    position: relative;
+}
+
+#about-showcase .about-showcase-content{
+   width: 100vw;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+#about-showcase .about-showcase-content h1{
+    font-size: 60px;
+    padding-bottom: 20px
+}
+
+#about-showcase .about-showcase-content p{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+/*Sub-showcase*/
+#sub-showcase{
+    padding: 40px 0px 30px 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+#sub-showcase .sub-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub-showcase .sub-content .navigate{
+    transition: all ease-in-out 0.5s;
+    display: inline-block;
+}
+
+#sub-showcase .sub-content .navigate:hover{
+    color: rgb(49, 174, 231);
+}
+
+#sub-showcase .sub-content .btn{
+    background-color: rgb(31, 125, 247);
+    color: #fff;
+    padding: 10px 12px;
+    transition: all ease-in-out 0.5s;
+    display: inline-block;
+}
+
+#sub-showcase .sub-content .btn:hover{
+    background-color: rgb(49, 174, 231);
+}
+
+/*Mission*/
+#showcase-mission{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+#showcase-mission .mission-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#showcase-mission .mission-content #mission-img{
+    width: 450px;
+    height: 400px;
+    background-image: url("sch2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#showcase-mission .mission-content #mission-text{
+    width: 500px;
+}
+
+#showcase-mission .mission-content #mission-text .line{
+    margin-bottom: 30px;
+}
+
+#showcase-mission .mission-content #mission-text h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#showcase-mission .mission-content #mission-text #lead{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#showcase-mission .mission-content #mission-text ul li{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#showcase-mission .mission-content #mission-text ul li i{
+    margin-right: 10px;
+    color: blue;
+}
+
+/*Team*/
+#team{
+    height: 400px;
+    width: 100vw;
+    position: relative;
+    background: url("team.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#team .team-content{
+    padding: 50px 0px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#team #team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#team #team-img img{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 150px;
+    height: 120px;
+    object-fit: fill;
+}
+
+#team #team-info h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#team #team-info .line{
+    margin-bottom: 40px;
+}
+
+#team #team-info ul li{
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#team #team-info ul li i{
+    margin-right: 20px;
+    color: rgb(31, 125, 247);
+}
+
+@media only screen and (max-width: 980px){
+    #team .team-content{
+        flex-direction: column;
+    }
+
+    #team{
+        height: 700px;
+    }
+
+    #team #team-img img{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 120px;
+        height: 100px;
+        object-fit: fill;
+    }
+    
+}
+
+@media only screen and (max-width: 560px){
+    #showcase-mission .mission-content #mission-text ul li p{
+        font-size: 10px;
+    }
+
+    #showcase-mission .mission-content #mission-text #lead{
+        font-size: 12px;
+    }
+
+    #team #team-info ul li p{
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    #showcase-mission .mission-content #mission-img{
+        width: 280px;
+        height: 240px;
+    }
+
+    #showcase-mission .mission-content #mission-text ul li p,
+    #showcase-mission .mission-content #mission-text ul li i
+    {
+        display: none;
+    }
+
+    #showcase-mission .mission-content #mission-text #lead{
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #showcase-mission .mission-content #mission-text h1{
+       font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #about-showcase .about-showcase-content h1{
+        font-size: 30px;
+        padding-bottom: 20px
+    }
+
+    #about-showcase .about-showcase-content p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 899px){
+    #showcase-mission .mission-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #showcase-mission .mission-content #mission-text{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    #sub-showcase .sub-content{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    #sub-showcase .sub-content .navigate{
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 325px){
+    #team .team-content{
+        flex-direction: column;
+    }
+
+    #team{
+        height: 700px;
+    }
+
+    #team #team-img img{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 80px;
+        height: 60px;
+        object-fit: fill;
+    }
+    
+}
